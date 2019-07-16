@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/carinama"
+        android:icon="@drawable/carinama"
+        android:title="Restoran" />
+    <item
+        android:id="@+id/caribudget"
+        android:icon="@mipmap/ic_launcher_foreground_logo"
+        android:title="Where to Eat" />
+
+    <item
+        android:id="@+id/maps"
+        android:icon="@drawable/maps"
+        android:title="Maps" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profil" />
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginbg"
+    >
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="@+id/nav_view">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+		
+		
+<TextView
+android:id="@+id/txtMarquee"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text=""
+android:textSize="14sp"
+android:typeface="sans"
+android:textColor="#ffffff"
+android:background="#fff"
+android:singleLine="true"
+android:ellipsize="marquee"
+android:marqueeRepeatLimit="marquee_forever">
+</TextView>
+
+
+        <ImageView
+            android:id="@+id/myGambar"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logoo" />
+        
+        <!--  Name Label -->
+
+           <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/txtnama_pelanggan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#fff" />
+        
+        
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/txtusername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#fff" />
+        
+          <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#fff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!--  Email TextField -->
+        <EditText
+            android:id="@+id/txtjenis_kelamin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/txtstatuss"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff" />
+
+
+            <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Telepon"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/txttelepon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#fff" />
+         
+        
+        <!--  Name Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="#fff" />
+         
+        <!--  Email Label -->
+        <!--  Link to Login Screen -->
+		 <Button android:id="@+id/btnproses"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:textColor="#000"
+            android:textStyle="bold" 
+        android:text="Update Data"
+        android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnhapus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:text="Kembali"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+ 
+</ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</android.support.constraint.ConstraintLayout>
